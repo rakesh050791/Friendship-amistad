@@ -1,0 +1,5 @@
+<% @pending_invites.each do |invites|%>
+
+  <%= invites.email %> => 
+  <%= link_to "Cancel invite?", friend_path(invites), :method => "delete" %>
+<% end %>

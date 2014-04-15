@@ -1,0 +1,6 @@
+<% @pending_requests.each do |request|%>  
+
+  <%= request.email %> =>
+  <%= link_to "Confirm friend?", friend_path(request), :method => "put"%>
+
+<% end %>
